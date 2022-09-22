@@ -1,0 +1,30 @@
+
+POST http://localhost:8080/types/adm/create
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "sport",
+  "nameUz": "uz",
+  "nameRu": "ru",
+  "nameEn": "en"
+}
+
+###
+
+GET http://localhost:8080/types/adm/list
+Authorization: Basic admin 123
+
+###
+
+PUT http://localhost:8080/types/adm/update/olam
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "olaam"
+}
+
+###
+DELETE localhost:8080/types/adm/delete/olaam
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTUyMTM1MTMsImV4cCI6MTY1NTIxNzExMywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.g4UibfGApMButTppoyRUIDMYl4YXdrFXeHnuUkK0rH8

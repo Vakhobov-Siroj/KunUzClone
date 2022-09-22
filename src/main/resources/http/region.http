@@ -1,0 +1,29 @@
+POST http://localhost:8080/region/adm/create
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "guliston",
+  "nameUz": "uz",
+  "nameRu": "ru",
+  "nameEn": "en"
+}
+
+###
+
+GET http://localhost:8080/region/adm/list
+Authorization: Basic admin 123
+
+
+###
+
+PUT http://localhost:8080/region/adm/update/ttt
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "ttt",
+  "nameUz": "toshkent",
+  "nameRu": "tashkent",
+  "nameEn": "tashkent"
+}

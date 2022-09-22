@@ -1,0 +1,29 @@
+POST localhost:8080/category/adm/create
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "Ijtimoiy",
+  "nameUz": "uz",
+  "nameRu": "ru",
+  "nameEn": "en"
+}
+
+###
+
+GET http://localhost:8080/category/adm/list
+Authorization: Basic admin 123
+
+
+###
+
+PUT http://localhost:8080/category/adm/update/Ijtimoiy
+Content-Type: application/json
+Authorization: Basic admin 123
+
+{
+  "key": "IjtimoiyKey ",
+  "nameUz": "Ijtimoiy tahlil ",
+  "nameRu": "Социальный анализ",
+  "nameEn": "Social analysis "
+}
